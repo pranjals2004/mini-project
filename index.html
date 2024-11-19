@@ -12,13 +12,20 @@
             <source src="bg1.mp4" type="video/mp4">
         </video>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul>
                 <li id="l1"><a href="/index.html">Home</a></li>
                 <li id="l2"><a href="/STATE.HTML">States</a></li>
-                <li id="l3"><a href="/popularplaces.html">Populer Places</a></li>
-                <li id="l4"><a href="/contact.html">Contact us</a></li>
+                <li id="l3"><a href="/popularplaces.html">Popular Places</a></li>
+                <li id="l4"><a href="/contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
         <div id="content">
             <h1>INDIA</h1>
             <a href="#explore">Explore</a>
@@ -38,19 +45,19 @@
         <br><br><br>
     
     <section class="footer">
-        <div id="state" class="footer">
-            <div>
+        <span id="content1" class="footer">
+            <span>
                 <a href="#">Back</a>
-            </div>
-            <div>
+            </span>
+            <span>
                 <a href="/STATE.HTML">States</a>
-            </div>
-        </div>
+            </span>
+        </span>
     </section>  
     <footer>
         <div class="container">
           <p>&copy; 2024 AKGEC | All Rights Reserved @ presented by pranjal ji.</p>
         </div>
-      </footer>  
+    </footer>  
 </body>
 </html>
