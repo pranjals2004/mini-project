@@ -10,17 +10,24 @@
     <video autoplay loop muted plays- inline class="back-video">
         <source src="bg3.mp4" type="video/mp4">
     </video>
-    <nav id="nav1">
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
         <ul>
             <li id="l1"><a href="/index.html">Home</a></li>
             <li id="l2"><a href="/STATE.HTML">States</a></li>
-            <li id="l3"><a href="/popularplaces.html">Populer Places</a></li>
-            <li id="l4"><a href="/contact.html">Contact us</a></li>
+            <li id="l3"><a href="/popularplaces.html">Popular Places</a></li>
+            <li id="l4"><a href="/contact.html">Contact Us</a></li>
         </ul>
     </nav>
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('nav ul');
+            navMenu.classList.toggle('active');
+        }
+    </script>
     <header>
         <h1>Popular Places in India</h1>
-        <nav id="nav2">
+        <div id="nav2">
             <ul>
                 <li><a href="#taj-mahal" id="one">Taj Mahal</a></li>
                 <li><a href="#qutub-minar" id="two">Qutub Minar</a></li>
@@ -28,7 +35,7 @@
                 <li><a href="#jaipur-palaces" id="four">Jaipur Palaces</a></li>
                 <li><a href="#varanasi" id="five">Varanasi</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
 
     <section id="taj-mahal" class="place">
@@ -61,15 +68,14 @@
         <p>Varanasi is one of the oldest cities in the world, located on the banks of the Ganges River in Uttar Pradesh. It is a sacred city for Hindus and a spiritual center of India.</p>
     </section>
     <section class="footer">
-        <div id="state" class="footer">
-            <div>
+        <span id="state" class="footer1">
+            <span>
                 <a href="/index.html">HOME</a>
-            </div>
-            <div id="contact">
+            </span>
+            <spam id="contact">
                 <a href="/contact.html">CONTACT</a>
-            </div>
-            <br><br>
-        </div>
+            </span>
+        </span>
     </section>
 
     <footer>
