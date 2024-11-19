@@ -76,7 +76,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     nav ul {
         display: none;
-        flex-direction: row;
+        flex-direction: column;
         background-color: olivedrab;
         width: 100%;
         position: absolute;
