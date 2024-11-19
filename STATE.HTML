@@ -12,37 +12,28 @@
             <source src="bg2.mp4" type="video/mp4">
         </video>
         <nav>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
             <ul>
                 <li id="l1"><a href="/index.html">Home</a></li>
                 <li id="l2"><a href="/STATE.HTML">States</a></li>
-                <li id="l3"><a href="/popularplaces.html">Populer Places</a></li>
-                <li id="l4"><a href="/contact.html">Contact us</a></li>
+                <li id="l3"><a href="/popularplaces.html">Popular Places</a></li>
+                <li id="l4"><a href="/contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                const navMenu = document.querySelector('nav ul');
+                navMenu.classList.toggle('active');
+            }
+        </script>
         <div id="h1">
-            <h1>states of india</h1>
-        </div>
-        <div id="book">
-            <form class="form">
-                <input type="text" list="mylist" placeholder="Where would you like to go?">
-                <button>SEARCH</button>
-                <datalist id="mylist">
-                    <option>NEW DELHI</option>
-                    <option>KASHMIR</option>
-                    <option>UTTRAKHAND</option>
-                    <option>GUJRAT</option>
-                    <option>UTTAR PRADESH </option>
-                    <option>GOA</option>
-                    <option>KERELA</option>
-                    <option>MADHYA PRADESH</option>
-                </datalist>
-            </form>
+            <h1>States of India</h1>
         </div>
         <div id="frame2">
             <div id="delhi" class="content">
                 <div id="box1" class="box1"><img src="delhi.jpg" alt="delhi"></div>
                 <div id="box2" class="box2">
-                    <h2>new delhi</h2>
+                    <h2>New Delhi</h2>
                     <p>
                         Delhi, the capital of India, is a vibrant mix of historical landmarks and modern infrastructure. It is home to iconic sites like the Red Fort, India Gate, and the Lotus Temple, representing its rich cultural heritage. The city also serves as a political, economic, and cultural hub, drawing people from all over the country and the world.
                     </p>
@@ -50,7 +41,7 @@
             </div>
             <div id="kashmir"class="content">
                 <div id="box2" class="box2">
-                    <h2>kashmir</h2>
+                    <h2>Kashmir</h2>
                     <p>
                         Kashmir, often called "Paradise on Earth," is renowned for its breathtaking natural beauty, including snow-capped mountains, lush valleys, and serene lakes like Dal Lake. It has a rich cultural heritage, with influences from Hindu, Buddhist, and Muslim traditions.
                     </p>
@@ -60,7 +51,7 @@
             <div id="uttrakhand" class="content">
                 <div id="box1" class="box1"><img src="uttrakhand.jpg" alt="utrakhand"></div>
                 <div id="box2" class="box2">
-                    <h2>uttrakhand</h2>
+                    <h2>Uttarakhand</h2>
                     <p>
                         Uttarakhand, located in the northern part of India, is known for its stunning Himalayan landscapes, spiritual significance, and rich biodiversity. It is home to famous pilgrimage sites like Haridwar, Rishikesh, and the Char Dham (Yamunotri, Gangotri, Kedarnath, and Badrinath). The state's natural beauty, with its forests, rivers, and hill stations like Nainital and Mussoorie, makes it a popular destination for both spiritual seekers and nature lovers.
                     </p>
@@ -68,7 +59,7 @@
             </div>
             <div id="gujrat" class="content">
                 <div id="box2" class="box2">
-                    <h2>gujrat</h2>
+                    <h2>Gujrat</h2>
                     <p>
                         Gujarat, a western state of India, is known for its vibrant culture, historic sites, and diverse landscapes, from the Rann of Kutch to the Saurashtra coastline. The state is the birthplace of Mahatma Gandhi and is famous for its rich heritage in textiles, handicrafts, and the colorful festival of Navratri. Gujarat is also an economic powerhouse, with a thriving industrial sector and a growing tourism industry.
                     </p>
@@ -78,7 +69,7 @@
             <div id="uttar pradesh" class="content">
                 <div id="box1" class="box1"><img src="up.jpg" alt="uttar pradesh"></div>
                 <div id="box2" class="box2">
-                    <h2>uttar pradesh</h2>
+                    <h2>Uttar Pradesh</h2>
                     <p>
                         Uttar Pradesh, located in northern India, is a state rich in history, culture, and spirituality, home to iconic landmarks like the Taj Mahal in Agra and the sacred city of Varanasi. It is a hub for Hindu pilgrimage, with sites such as Mathura, Ayodhya, and Kashi attracting millions of devotees each year. The state's diverse heritage also includes Mughal architecture, ancient temples, and a thriving traditional arts scene.
                     </p>
@@ -86,7 +77,7 @@
             </div>
             <div id="goa" class="content">
                 <div id="box2" class="box2">
-                    <h2>goa</h2>
+                    <h2>Goa</h2>
                     <p>
                         Goa, a small coastal state in western India, is famous for its pristine beaches, vibrant nightlife, and Portuguese colonial architecture. Known for its laid-back atmosphere, it attracts both domestic and international tourists seeking relaxation, adventure, and cultural experiences. Goa also has a rich history, blending Hindu traditions with Catholic influences, reflected in its festivals, churches, and cuisine.
                     </p>
@@ -96,7 +87,7 @@
             <div id="kerela" class="content">
                 <div id="box1" class="box1"><img src="kerela.jpg" alt="kerela"></div>
                 <div id="box2" class="box2">
-                    <h2>kerela</h2>
+                    <h2>Kerela</h2>
                     <p>
                         Kerala, located on the southwestern coast of India, is renowned for its lush landscapes, tranquil backwaters, and rich cultural heritage. It is famous for its Ayurvedic treatments, pristine beaches, hill stations like Munnar, and vibrant festivals like Onam and Theyyam. The state's unique blend of natural beauty, tradition, and a high standard of living has earned it the nickname "God's Own Country."
                     </p>
@@ -104,7 +95,7 @@
             </div>
             <div id="madhya pradesh" class="content">
                 <div id="box2" class="box2">
-                    <h2>madhya pradesh</h2>
+                    <h2>Madhya Pradesh</h2>
                     <p>
                         Madhya Pradesh, located in central India, is known for its rich history, ancient temples, and wildlife sanctuaries. The state is home to UNESCO World Heritage Sites like the Khajuraho Temples and Sanchi Stupa, as well as the iconic Kanha and Bandhavgarh national parks. Its vibrant cultural scene and historical significance make it a key destination for those interested in India's heritage and natural beauty.
                     </p>
@@ -116,14 +107,13 @@
 
         <br><br><br>
         <section class="footer">
-            <div id="state" class="footer">
-                <div>
+            <span id="state" class="footer">
+                <span>
                     <a href="/index.html">HOME</a>
-                </div>
-                <div id="Populer">
+                </span>
+                <span id="Populer">
                     <a href="/popularplaces.html">Populer Places</a>
-                </div>
-                <br><br>
+                </span>
             </div>
         </section> 
         <footer>
