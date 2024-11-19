@@ -6,10 +6,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: transparent;
-  color: black;
+  color: white;
   background-color: black;
   line-height: 1.6;
-  padding-top: 2%;
+  padding-top: 7%;
   height: 100%;
 }
 .back-video{
@@ -17,7 +17,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  opacity: .9;
+  opacity: .7;
 }
 @media (min-aspect-ratio:16/9){
   .back-video{
@@ -30,48 +30,67 @@ body {
       width: auto;
       height: 100%;
   }
-}
-#nav1{
-  width: 100%;
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding-right: 5%;
-  text-align: end;
-  justify-content: space-between;
-  z-index: 1000;
-  background-color: darkcyan;
-  opacity: .8;
-  text-transform: capitalize;
-}
-#nav1:hover{
-  opacity: 1;
-}
-#nav1 ul li{
-  display: inline-block;
-  padding-left: 40px;
-}
-#nav1 ul li a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 2vw;
+}/* Navigation Bar Styles */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgb(35, 142, 119);
+    opacity: 0.9;
+    z-index: 1000;
 }
 
-#l1:hover{
-  transform: scale(120.5%);
-  transition: .4s;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
-#l2:hover{
-  transform: scale(120.5%);
-  transition: .4s;
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: background 0.3s, transform 0.3s;
 }
-#l3:hover{
-  transform: scale(120.5%);
-  transition: .4s;
+
+nav ul li a:hover {
+    background-color: #696b2f;
+    border-radius: 5px;
+    transform: scale(1.1);
 }
-#l4:hover{
-  transform: scale(120.5%);
-  transition: .4s;
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Responsive Navigation for Smaller Screens */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: row;
+        background-color: olivedrab;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    } 
+    .hamburger {
+        display: block;
+    }
 }
 header {
   background-color: transparent;
@@ -83,7 +102,7 @@ header .container {
   text-align: center;
 }
 
-h1 {
+h1 {margin-top: 5%;
   font-size: 4.5rem;
   margin: 0;
   transition: .5s;
@@ -136,13 +155,13 @@ textarea {
 button.submit-btn {
   width: 100%;
   padding: 12px;
-  background-color: black;
+  background-color:rgb(104, 84, 59);
   color: white;
   border: none;
   border-radius: 4px;
   font-size: 1.2em;
   cursor: pointer;
-  opacity: .5;
+  opacity: 1;
 }
 
 button.submit-btn:hover {
@@ -180,13 +199,13 @@ footer {
   opacity: .7;
   border-radius: 8px;
   color: #fff;
-  margin-top: 20px;
   text-transform: uppercase;
-  margin-bottom: .5%;
+  bottom: 0%;
 }
 @media (max-width: 768px) {
   h1 {
-    font-size: 2em;
+    font-size: 3rem;
+    margin-top: 5%;
   }
 
   .contact-form-section .container {
@@ -201,6 +220,7 @@ footer {
 @media (max-width: 480px) {
   h2 {
     font-size: 1.5em;
+    margin-top: 5%;
   }
 
   .form-group label {
@@ -215,3 +235,4 @@ footer {
     font-size: 1em;
   }
 }
+
