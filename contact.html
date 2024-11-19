@@ -11,14 +11,21 @@
     <video autoplay loop muted plays- inline class="back-video">
         <source src="bg4.mp4" type="video/mp4">
     </video>
-    <nav id="nav1">
+    <nav>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/STATE.HTML">States</a></li>
-          <li><a href="/popularplaces.html">Populer Places</a></li>
-          <li><a href="/contact.html">Contact us</a></li>
+          <li id="l1"><a href="/index.html">Home</a></li>
+          <li id="l2"><a href="/STATE.HTML">States</a></li>
+          <li id="l3"><a href="/popularplaces.html">Popular Places</a></li>
+          <li id="l4"><a href="/contact.html">Contact Us</a></li>
       </ul>
   </nav>
+  <script>
+      function toggleMenu() {
+          const navMenu = document.querySelector('nav ul');
+          navMenu.classList.toggle('active');
+      }
+  </script>
   <header>
     <div class="container">
       <h1>Contact Us</h1>
@@ -55,12 +62,13 @@
     </div>
 </section>
 
-  <footer>
+<footer>
     <div class="container">
-      <p>&copy; 2024 AKGEC | All Rights Reserved @ presented by pranjal ji.</p>
+    <p>&copy; 2024 AKGEC | All Rights Reserved @ presented by pranjal ji.</p>
     </div>
-  </footer>
+</footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
