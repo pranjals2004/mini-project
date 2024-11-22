@@ -188,10 +188,8 @@ section{
         padding-left: 0;
     }
     #content1 a{
-        font-size: 5vw;
-    }
-        #content1 a:hover{
-        font-size: 5.5vw;
+        font-size: 4vw;
+        a:hover{font-size: 5.5vw}
     }
 }
 
